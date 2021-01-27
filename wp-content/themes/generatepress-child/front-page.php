@@ -144,8 +144,8 @@ echo do_shortcode('[smartslider3 slider=1]');
 							по субботам — с 09:00 до 15:00</p>
 						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> ул. Криворожская, 6, стр. 2, станция метро «Нагорная»</p>
 						<p><strong>ВРЕМЯ РАБОТЫ</strong></p>
-						<p>в рабочие дни — с 08:00 до 20:00<br>
-						по субботам — с 08:00 до 15:00</p>
+						<p>в рабочие дни — с 09:00 до 20:00<br>
+						по субботам — с 09:00 до 15:00</p>
 						<div class="contact">
 							<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:rabota@mosmetro.ru">rabota@mosmetro.ru</a></p>
 							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+74956220201">+7 495 622-02-01</a></p>

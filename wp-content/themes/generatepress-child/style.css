@@ -12,16 +12,16 @@ Updated: 2020-05-13 14:09:57
 */
 @font-face {
   font-family:'Moscow Sans';
-  src: url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.eot')format('embedded-opentype');
-  src: url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.woff')format('woff'), url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.woff2')format('woff2');
+  src: url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.eot')format('embedded-opentype');
+  src: url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.woff')format('woff'), url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Light.woff2')format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
 font-family:'Moscow Sans';
-src: url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.eot')format('embedded-opentype');
-src: url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.woff')format('woff'), url('https://job.mosmetro.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.woff2')format('woff2');
+src: url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.eot')format('embedded-opentype');
+src: url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.woff')format('woff'), url('http://u1126356.isp.regruhosting.ru/wp-content/themes/generatepress-child/fonts/MoscowSansWeb-Bold.woff2')format('woff2');
 font-weight: 700;
 font-style: normal;
 }
