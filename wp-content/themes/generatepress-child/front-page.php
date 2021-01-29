@@ -142,7 +142,7 @@ echo do_shortcode('[smartslider3 slider=1]');
 						<p><strong>ВРЕМЯ РАБОТЫ</strong></p>
 						<p>в рабочие дни — с 09:00 до 20:00<br>
 							по субботам — с 09:00 до 15:00</p>
-						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> ул. Криворожская, 6, стр. 2, станция метро «Нагорная»</p>
+						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> ул. Криворожская, д.6, стр.1, станция метро «Нагорная»</p>
 						<p><strong>ВРЕМЯ РАБОТЫ</strong></p>
 						<p>в рабочие дни — с 09:00 до 20:00<br>
 						по субботам — с 09:00 до 15:00</p>
