@@ -148,8 +148,7 @@ echo do_shortcode('[smartslider3 slider=1]');
 						по субботам — с 09:00 до 15:00</p>
 						<div class="contact">
 							<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:rabota@mosmetro.ru">rabota@mosmetro.ru</a></p>
-							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+74956220201">+7 495 622-02-01</a></p>
-							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+784959504040">+7 495 950-40-40</a></p>
+							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+74956222222">+7 495 622-22-22</a></p>
 						</div>
 					</div>
 					<div class="contact__item">
