@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header(); ?>
-
+	<div id="w-100">
 	<div id="primary" <?php generate_do_element_classes( 'content' ); ?>>
 		<main id="main" <?php generate_do_element_classes( 'main' ); ?>>
 		<section class="container">
@@ -60,7 +60,7 @@ get_header(); ?>
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	</div>
 	<?php
 
 
