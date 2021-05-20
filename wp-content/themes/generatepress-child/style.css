@@ -625,3 +625,7 @@ footer {
     margin-top: 12em !important;
   }
 }
+.container__item ul span {
+  font-family: 'Moscow Sans', sans-serif !important;
+  font-size: 17px !important;
+}
