@@ -22,18 +22,16 @@ echo do_shortcode('[smartslider3 slider=1]');
 					<!-- modal -->
 					<div class="modal" data-modal="1">
 						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-						<h4 class="modal__title">Выгода *</h4>
+						<h4 class="modal__title">Выгода</h4>
 							<ul class="modal__list">
 								<li>конкурентоспособная оплата труда </li>
-								<li>«13-я зарплата» по итогам года</li>
-								<li>повышение оклада за стаж (уже после первого года работы и в дальнейшем)</li>
-								<li>ежегодная индексация зарплат</li>
-								<li>дополнительные дни отпуска </li>
-								<li>бесплатный проезд в столичном метро </li>
-								<li>компенсация ж/д поездок на работу и обратно для жителей Подмосковья </li>
-								<li>другие преференции</li>
+								<li>ежегодная индексация</li>
+								<li>«13-я» зарплата</li>
+								<li>повышение оклада за стаж уже после первого года работы и в дальнейшем</li>
+								<li>дополнительные дни отпуска для работников многих профессий</li>
+								<li>бесплатный проезд в столичном метро и компенсация ж/д поездок на работу и обратно по Москве и Подмосковью</li>
+								<li>другие бонусы от предприятия</li>
 							</ul>
-							<cite>* социальные льготы комбинируются в зависимости от профессии</cite>
 					</div>
 					<!-- modal end -->
 					<div class="edge__item js-open-modal" data-modal="2">
@@ -48,10 +46,9 @@ echo do_shortcode('[smartslider3 slider=1]');
 						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 						<h4 class="modal__title">Стабильность</h4>
 						<ul class="modal__list">
-							<li>официальное оформление и налоговые отчисления </li>
-							<li>соблюдение законодательства РФ и Коллективного договора предприятия</li>
-							<li>своевременная выплата зарплаты (дважды в месяц)</li>
-							<li>защита со стороны профсоюза</li>
+							<li>гарантия соблюдения законодательства РФ</li>
+							<li>своевременные выплаты зарплаты дважды в месяц</li>
+							<li>дополнительные льготы по Коллективному договору: выплаты молодым родителям, транспортные компенсации, поддержка молодых специалистов и другие преференции</li>
 						</ul>
 					</div>
 					<!-- modal end -->
@@ -67,10 +64,10 @@ echo do_shortcode('[smartslider3 slider=1]');
 						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 						<h4 class="modal__title">Перспектива</h4>
 						<ul class="modal__list">
-							<li>ежегодные конкурсы профессионального мастерства</li>
-							<li>шанс получить профессиональное образование за счет метрополитена </li>
+							<li>бесплатное обучение и повышение квалификации в Корпоративном университете</li>
+							<li>шанс получить высшее образование за счет предприятия </li>
 							<li>многоплановые образовательные программы, лекции, тренинги </li>
-							<li>бесплатное обучение в корпоративном учебно-производственном центре </li>
+							<li>ежегодные конкурсы профессионального мастерства </li>
 							<li>отбор в кадровый резерв, развитие и карьерное продвижение</li>
 						</ul>
 					</div>
@@ -87,14 +84,11 @@ echo do_shortcode('[smartslider3 slider=1]');
 						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 						<h4 class="modal__title">Забота</h4>
 						<ul class="modal__list">
-						<li>работа рядом с домом (для ряда специалистов)</li>
-						<li>гибкие графики работы (для ряда специалистов) </li>
-						<li>форменная одежда (для ряда специалистов)</li>
-						<li>медицинские осмотры определенных категорий работников</li>
-						<li>насыщенная корпоративная жизнь (спорт, музыка, танцы, волонтерство, экскурсии, викторины и многое другое)</li>
-						<li>льготный отдых в оздоровительном комплексе метрополитена</li>
-						<li>детский оздоровительный лагерь и детский клуб </li>
-						<li>подарки к праздникам</li>
+						<li>льготный отдых и корпоративный досуг</li>
+						<li>сообщества по интересам: спорт, музыка, театр и многое другое </li>
+						<li>скидки на отдых в Оздоровительном комплексе метрополитена</li>
+						<li>оздоровительный лагерь и развивающий клуб для детей</li>
+						<li>подарки к праздникам, экскурсии, билеты в театр и на концерты</li>
 						</ul>
 					</div>
 					<div class="overlay" id="overlay-modal"></div>
@@ -126,11 +120,18 @@ echo do_shortcode('[smartslider3 slider=1]');
 				?>
 				</section>
 				<section class="video">
-					<div class="video__item"><p>Если вы не нашли нужную вакансию, направьте нам резюме<br> с указанием желаемой должности на <a href="mailto:rabota@mosmetro.ru">rabota@mosmetro.ru</a></p></div>
+					<div class="video__item">
+					<div class="information__p">
+					    <p>Среди самых востребованных вакансий Москвы – работа машинистом электропоезда метро, водителем автобуса и водителем трамвая.</p>
+                        <p>Но у нас сотни профессий!</p>
+                        <p>Если вы не нашли работу по себе среди открытых вакансий транспорта Москвы, направьте резюме с указанием желаемой должности на <a href="mailto:rabota@mosmetro.ru">rabota@mosmetro.ru</a></p>
+					</div>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/img-n.png" class="information__img">
+					</div>
 					<div class="video__item js-open-modal" data-modal="5">
 					</div>
 					<div class="modal video-modal" data-modal="5">
-						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+						<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
 						<video src="<?php echo get_stylesheet_directory_uri(); ?>/video/video_index.mp4" controls="controls" controlslist="nodownload" class="vd"></video>
 					</div>
 				</section>
@@ -139,20 +140,19 @@ echo do_shortcode('[smartslider3 slider=1]');
 					<div class="contact__item">
 						<p><span class="color__red">Единый центр </span> <strong>подбора персонала:</strong></p>
 						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> второй ярус станции метро «Выставочная» <br>(последний вагон из центра, следуйте по навигации)</p>
-						<p><strong>ВРЕМЯ РАБОТЫ</strong></p>
-						<p>в рабочие дни — с 09:00 до 20:00<br>
-							по субботам — с 09:00 до 15:00</p>
+						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> наземный вестибюль станции метро «Черкизовская»</p>
 						<p><span class="color__red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> ул. Криворожская, д.6, стр.1, станция метро «Нагорная»</p>
 						<p><strong>ВРЕМЯ РАБОТЫ</strong></p>
 						<p>в рабочие дни — с 09:00 до 20:00<br>
 						по субботам — с 09:00 до 15:00</p>
 						<div class="contact">
 							<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:rabota@mosmetro.ru">rabota@mosmetro.ru</a></p>
-							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+74956222222">+7 495 622-22-22</a></p>
+							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+74956222222">8 (495) 622-22-22 (для Москвы)</a></p>
+							<p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+78002202202">8 (800) 220-22-02 (для регионов)</a></p>
 						</div>
 					</div>
 					<div class="contact__item">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A28c4fee36d80ec6c2d223d8a3e46d4caa0f35401793d0f3e400859a44fbaa270&amp;source=constructor" width="100%" height="491" frameborder="0"></iframe>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc011f5c25e32ff01498e8c3379d389fce669e55cd19688de2e23feb67a1cff2&amp;source=constructor" width="100%" height="491" frameborder="0"></iframe>
 					</div>
 				</section>
 			</section>

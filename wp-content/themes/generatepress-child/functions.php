@@ -48,10 +48,51 @@ function register_post_types(){
 		'rewrite'             => true,
 		'query_var'           => true
 	] );
+};
+// New type record
+add_action( 'init', 'register_post_types_drugie' );
+function register_post_types_drugie(){
+	register_post_type( 'drugie', [
+		'label'  => null,
+		'labels' => [
+            'name'               => 'Другие вакансии', // основное название для типа записи
+            'singular_name'      => 'Вакансия', // название для одной записи этого типа
+            'add_new'            => 'Добавить вакансию', // для добавления новой записи
+            'add_new_item'       => 'Добавление вакансии', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item'          => 'Редактирование вакансии', // для редактирования типа записи
+            'new_item'           => 'Новое ____', // текст новой записи
+            'view_item'          => 'Смотреть вакансию', // для просмотра записи этого типа.
+            'search_items'       => 'Искать вакансию', // для поиска по этим типам записи
+            'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+            'parent_item_colon'  => '', // для родителей (у древовидных типов)
+            'menu_name'          => 'Другие вакансии', // название меню
+        ],
+		'description'         => '',
+		'public'              => true,
+		'show_in_menu'        => null, // показывать ли в меню адмнки
+		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'rest_base'           => null, // $post_type. C WP 4.7
+		'menu_position'       => 5,
+		'menu_icon'           => 'dashicons-groups',
+		'hierarchical'        => false,
+		'supports'            => [ 'title', 'thumbnail', 'custom-fields', 'revisions', 'page-attributes' ],
+		'taxonomies'          => [ 'post_tag', 'category ' ],
+		'has_archive'         => false,
+		'rewrite'             => true,
+		'query_var'           => true,
+	] );
 }
+
+
 // задаем шаблон по умолчанию для нового типа записи
 add_filter('template_include', 'my_template');
 function my_template( $template ) {
+
+    if( is_page('drugie-vakansii') ){
+        if ( $new_template = locate_template( array( '/templates/single-drugie-vakansii.php' ) ) )
+            return $new_template ;
+    }
 
 	global $post;
 	if( $post->post_type == 'vacan' ){
