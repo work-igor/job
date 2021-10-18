@@ -165,9 +165,6 @@ a.btn__link-v:hover {
   font-weight: bold;
   margin-bottom: 1em;
 }
-.contact {
-  color: #da1f31;
-}
 .stud__content > .wp-block-group__inner-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +544,49 @@ footer {
 .text__block {
   margin: 0 10px;
 }
+.contact__item p {
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+.contact__item strong {
+  font-weight: 900;
+}
+.points__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.points__items p {
+  margin-left: 10px;
+}
+.points__items span {
+  font-weight: 300;
+}
+.contact {
+  margin-top: 30px;
+}
+p.contact__mail {
+  margin-bottom: 30px;
+}
+p.contact__phone {
+  margin-bottom: 15px;
+}
+.contact a {
+  color: #000000;
+  font-weight: 800;
+}
+p.contact__title {
+  margin-bottom: 15px;
+}
+p.color__red.contact__title {
+  margin-bottom: 30px;
+}
 @media (max-width: 1068px) {
   .advantage img {
     flex-basis: calc((100% - 2 * 10px) / 3);
@@ -679,6 +719,7 @@ footer {
   }
   .contact__item {
     width: 100%;
+    margin-bottom: 1rem;
   }
   .btn__link-v {
     display: none;
