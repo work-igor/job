@@ -10,13 +10,30 @@ get_header(); ?>
 <h1 class="entry-title"><?php the_title(); ?></h1>
 <?php echo get_post_field('post_content', $post->ID); ?>
 <style>
+    .entry-title,
+    .filter,
+    .result-filter,
+    .result {
+        padding: 0 40px;
+    }
+    .result {
+        margin-top: 80px;
+    }
     .filter {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        background: #F9F9F9;
+        margin-top: 40px;
     }
     .filter__click {
         font-size: 17px;
         font-weight: bold;
+        color: #D7282F;
+        padding: 15px 0;
+        margin-bottom: 0;
     }
     .filter__click:hover {
         cursor: pointer;
@@ -41,7 +58,7 @@ get_header(); ?>
         position: absolute;
         z-index: 100;
         color: #3A3A3A;
-        background: #FFFFFF;
+        background: #F9F9F9;
         width: auto;
         display: block;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.14);
@@ -56,10 +73,7 @@ get_header(); ?>
         height: 0;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 20px solid #FFFFFF;
-    }
-    .checkbox {
-        padding: 1rem;
+        border-bottom: 20px solid #F9F9F9;
     }
     .checkbox label {
         white-space: nowrap;
@@ -147,6 +161,7 @@ get_header(); ?>
         background: #FFF;
         border: 1px solid #BEBEBE;
         vertical-align: middle;
+        margin-bottom: 3px;
     }
     .filter input:checked + label {
         color: #D7282F;
@@ -162,25 +177,27 @@ get_header(); ?>
     .filter__panel label {
         display: none;
         position: relative;
+        padding-top: 0px;
+        padding-bottom: 15px;
         padding-right: 0.5rem;
-        padding-left: 0.5rem;
+        padding-left: 0;
     }
     .filter__panel label:hover,
-    .filter__panel label::before {
+    .filter__panel label::after {
         cursor: pointer;
     }
-    .filter__panel label::before {
-        content: 'x';
-        display: table;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 0.6rem;
-        color: #000000;
+    .filter__panel label::after {
+        content: '\00D7';
+        display: inline-block;
+        position: relative;
+        font-size: 1.2rem;
+        color: #D7282F;
+        margin-left: 8px;
     }
     .result-filter {
         display: flex;
         flex-wrap: wrap;
+        background: #F9F9F9;
     }
     /* end filter panel */
     .filter__click {
@@ -203,6 +220,12 @@ get_header(); ?>
     .filter__reset:hover {
         cursor: pointer;
     }
+    .filter__reset {
+        font-weight: bold;
+    }
+    .checkbox {
+        padding: 0.5rem;
+    }
 /*  site style  */
     .site-footer {
         margin-top: 25rem;
@@ -212,6 +235,12 @@ get_header(); ?>
 @media (max-width: 768px) {
     .filter__item {
         width: 45%;
+    }
+    .checkbox {
+        padding: 1rem;
+    }
+    .result .accordion__item .accordion__btn {
+        padding: 1rem 0;
     }
 }
 @media (max-width: 568px) {
@@ -250,12 +279,18 @@ get_header(); ?>
     .btn__item {
         margin-top: 1rem;
     }
+    .entry-title,
+    .filter,
+    .result-filter,
+    .result {
+        padding: 0px 10px;
+    }
 }
 </style>
 <section class="filter">
 <!--Фильтр опыт работы -->
     <div class="filter__item filter__experience">
-        <h2 class="filter__click">Опыт работы<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="black" stroke-width="2"/></svg></span></h2>
+        <h2 class="filter__click">Опыт работы<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="#D7282F" stroke-width="2"/></svg></span></h2>
         <div class="filter__block hidden">
             <div class="checkbox">
                 <input type="checkbox" rel="experience__no" onchange="change();" id="b1"/>
@@ -269,7 +304,7 @@ get_header(); ?>
     </div>
 <!--Фильтр образование -->
     <div class="filter__item filter__education">
-        <h2 class="filter__click">Образование<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="black" stroke-width="2"/></svg></span></h2>
+        <h2 class="filter__click">Образование<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="#D7282F" stroke-width="2"/></svg></span></h2>
         <div class="filter__block hidden">
             <div class="checkbox">
                 <input type="checkbox" rel="high" onchange="change();" id="b3"/>
@@ -291,7 +326,7 @@ get_header(); ?>
     </div>
 <!--Фильтр график работы -->
     <div class="filter__item filter__schedule">
-        <h2 class="filter__click">График работы<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="black" stroke-width="2"/></svg></span></h2>
+        <h2 class="filter__click">График работы<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="#D7282F" stroke-width="2"/></svg></span></h2>
         <div class="filter__block hidden">
             <div class="checkbox">
                 <input type="checkbox" rel="schedule-one" onchange="change();" id="b7"/>
@@ -313,7 +348,7 @@ get_header(); ?>
     </div>
 <!--Фильтр профобласть -->
     <div class="filter__item filter__professional">
-        <h2 class="filter__click">Профобласть<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="black" stroke-width="2"/></svg></span></h2>
+        <h2 class="filter__click">Профобласть<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="#D7282F" stroke-width="2"/></svg></span></h2>
         <div class="filter__block hidden">
             <div class="checkbox">
                 <input type="checkbox" rel="professional__administrative-staff" onchange="change();" id="b11"/>
@@ -375,35 +410,35 @@ get_header(); ?>
     </div>
 <!--Фильтр Работодатель -->
     <div class="filter__item filter__employer">
-        <h2 class="filter__click">Работодатель<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="black" stroke-width="2"/></svg></span></h2>
+        <h2 class="filter__click">Работодатель<span class="filter__click arrow-filter"><svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 4L9 1" stroke="#D7282F" stroke-width="2"/></svg></span></h2>
         <div class="filter__block hidden">
             <div class="checkbox">
                 <input type="checkbox" rel="employer-ampp" onchange="change();" id="b25"/>
-                <label for="b25">ГКУ "АМПП"</label>
+                <label for="b25">Московский паркинг</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-op" onchange="change();" id="b26"/>
-                <label for="b26">ГКУ "Организатор перевозок"</label>
+                <label for="b26">Организатор перевозок</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-mm" onchange="change();" id="b27"/>
-                <label for="b27">ГУП "Московский метрополитен"</label>
+                <label for="b27">Московский метрополитен</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-m" onchange="change();" id="b28"/>
-                <label for="b28">ГУП "Мосгортранс"</label>
+                <label for="b28">Мосгортранс</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-mtp" onchange="change();" id="b29"/>
-                <label for="b29">ГБУ "МосТрансПроект"</label>
+                <label for="b29">МосТрансПроект</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-codd" onchange="change();" id="b30"/>
-                <label for="b30">ГКУ ЦОДД</label>
+                <label for="b30">Центр организации дорожного движения</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-mt" onchange="change();" id="b31"/>
-                <label for="b31">Музей "Московский транспорт"</label>
+                <label for="b31">Музей Транспорта Москвы</label>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-madi" onchange="change();" id="b32"/>
@@ -411,7 +446,7 @@ get_header(); ?>
             </div>
             <div class="checkbox">
                 <input type="checkbox" rel="employer-mdto" onchange="change();" id="b33"/>
-                <label for="b33">АНО "Московская дирекция транспортного обслуживания"</label>
+                <label for="b33">Московская дирекция транспортного обслуживания</label>
             </div>
         </div>
     </div>
@@ -441,15 +476,15 @@ get_header(); ?>
         <div class="professional__control filter__panel"><label for="b22">Управление персоналом, обучение персонала</label></div>
         <div class="professional__lawyer filter__panel"><label for="b23">Юристы</label></div>
         <div class="professional__management filter__panel"><label for="b24">Руководство</label></div>
-        <div class="employer-ampp filter__panel"><label for="b25">ГКУ "АМПП"</label></div>
-        <div class="employer-op filter__panel"><label for="b26">ГКУ "Организатор перевозок"</label></div>
-        <div class="employer-mm filter__panel"><label for="b27">ГУП "Московский метрополитен"</label></div>
-        <div class="employer-m filter__panel"><label for="b28">ГУП "Мосгортранс"</label></div>
-        <div class="employer-mtp filter__panel"><label for="b29">ГБУ "МосТрансПроект"</label></div>
-        <div class="employer-codd filter__panel"><label for="b30">ГКУ ЦОДД</label></div>
-        <div class="employer-mt filter__panel"><label for="b31">Музей "Московский транспорт"</label></div>
+        <div class="employer-ampp filter__panel"><label for="b25">Московский паркинг</label></div>
+        <div class="employer-op filter__panel"><label for="b26">Организатор перевозок</label></div>
+        <div class="employer-mm filter__panel"><label for="b27">Московский метрополитен</label></div>
+        <div class="employer-m filter__panel"><label for="b28">Мосгортранс</label></div>
+        <div class="employer-mtp filter__panel"><label for="b29">МосТрансПроект</label></div>
+        <div class="employer-codd filter__panel"><label for="b30">Центр организации дорожного движения</label></div>
+        <div class="employer-mt filter__panel"><label for="b31">Музей Транспорта Москвы</label></div>
         <div class="employer-madi filter__panel"><label for="b32">Московская административная дорожная инспекция</label></div>
-        <div class="employer-mdto filter__panel"><label for="b33">АНО "Московская дирекция транспортного обслуживания"</label></div>
+        <div class="employer-mdto filter__panel"><label for="b33">Московская дирекция транспортного обслуживания</label></div>
         <span class="filter__reset">Очистить фильтры</span>
     </section>
 <section class="result">
