@@ -94,6 +94,11 @@ function my_template( $template ) {
             return $new_template ;
     }
 
+		if( is_page('osnovnye-vakansii') ){
+			if ( $template_osnovnye = locate_template( array( '/templates/single-osnovnye-vakansii.php' ) ) )
+					return $template_osnovnye ;
+		}
+
 	global $post;
 	if( $post->post_type == 'vacan' ){
 		return get_stylesheet_directory() . '/templates/single-vacan.php';
